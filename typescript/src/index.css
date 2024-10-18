@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-bullet::marker {
+    color: whitesmoke; 
+  }
+
+* {
+  font-size: 1.7rem;
+}
