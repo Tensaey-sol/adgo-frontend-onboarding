@@ -6,7 +6,7 @@ interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="flex flex-col items-start px-20 pt-24 w-full bg-blue-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+    <footer className="flex flex-col items-start px-20 pt-24 w-full bg-blue-950 max-md:px-5 max-md:max-w-full">
       <div className="flex flex-col max-w-full w-[1059px]">
         <div className="flex flex-wrap gap-10 max-md:max-w-full">
           <div className="flex flex-col flex-1 self-start mt-2 text-base font-medium leading-7 text-white">
@@ -21,7 +21,7 @@ const Footer: React.FC<FooterProps> = () => {
             <img loading="lazy" src={SocialMediaIcons} className="object-contain mt-7 w-36 max-w-full aspect-[9.01]" alt="Social media icons" />
           </div>
         </div>
-        <div className="flex flex-wrap gap-7 self-start py-4 pr-20 pl-9 text-gray-800 bg-amber-200 max-md:px-5">
+        <div className="flex flex-wrap gap-7 self-start py-4 pr-20 pl-9 text-gray-800 bg-amber-200 max-md:px-5 mt-5">
           <div className="flex flex-col">
             <h3 className="self-start text-lg font-medium leading-8">Email me at</h3>
             <p className="text-base leading-7 opacity-80">contact@website.com</p>

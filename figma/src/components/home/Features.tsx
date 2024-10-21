@@ -51,7 +51,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) =
 
 const Features: React.FC = () => {
   return (
-    <section className="flex flex-col justify-center items-center px-20 py-12 w-full bg-slate-100 max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <section className="flex flex-col justify-center items-center px-20 py-12 w-full bg-slate-100 max-md:px-5 max-md:pt-12 max-md:pb-24 max-md:max-w-full">
       <div className="flex flex-col w-full max-w-[1279px] max-md:max-w-full">
         <h2 className="sr-only">Features</h2>
         <p className="self-center text-base font-medium leading-7 text-center text-gray-800">Features</p>

@@ -6,7 +6,7 @@ interface PrivacyPolicyProps {}
 const PrivacyPage: React.FC<PrivacyPolicyProps> = () => {
   return (
     <>
-      <div className="flex overflow-hidden flex-col bg-white">
+      <div className="flex overflow-hidden flex-col bg-white mb-20">
         <main className="flex flex-col self-center mt-32 max-w-full text-base leading-7 text-gray-800 w-[840px] max-md:mt-10">
           <h1 className="self-center text-5xl font-semibold leading-none max-md:text-4xl">
             Privacy Policy
