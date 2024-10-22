@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CompanyLogo from '../../assets/Company Logo.svg'
 
-interface HeaderProps {}
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   return (
-    <header className="bg-blue-950 px-8 py-6 text-white shadow-lg">
+    <header className="bg-customBlue px-8 py-6 text-white shadow-lg">
       <div className="flex justify-between items-center max-w-6xl mx-auto">
         <img
           loading="lazy"

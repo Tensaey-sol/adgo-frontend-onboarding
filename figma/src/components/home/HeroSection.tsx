@@ -4,7 +4,7 @@ import BackgroundImage from '../../assets/BG Image.svg';
 const HeroSection: React.FC = () => {
   return (
     <section className="flex flex-col rounded-none">
-      <div className="flex flex-col justify-center items-center px-16 py-36 w-full bg-blue-950 max-md:px-5 max-md:py-24 max-md:max-w-full">
+      <div className="flex flex-col justify-center items-center px-16 py-36 w-full bg-customBlue max-md:px-5 max-md:py-24 max-md:max-w-full">
         <div className="-mb-8 w-full max-w-screen-xl max-md:mb-2.5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             {/* Hero Content */}

@@ -1,22 +1,28 @@
 import React from 'react';
-import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/layout/Layout';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/home/Home';
 import PrivacyPage from './components/privacy/Privacy';
 
-const App: React.FC = () => {
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        index: true, 
+        element: <HomePage />,
+      },
+      {
+        path: 'privacy',
+        element: <PrivacyPage />,
+      },
+    ],
+  },
+]);
 
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route index element={<HomePage />} />
-          <Route path="privacy" element={<PrivacyPage />} />
-        </Route>
-      </Routes>
-    </Router>
-  );
+const App: React.FC = () => {
+  return <RouterProvider router={router} />;
 };
 
 export default App;

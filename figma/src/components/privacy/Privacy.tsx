@@ -1,9 +1,7 @@
 import React from 'react';
 import ContentSection from './ContentSection';
 
-interface PrivacyPolicyProps {}
-
-const PrivacyPage: React.FC<PrivacyPolicyProps> = () => {
+const PrivacyPage: React.FC = () => {
   return (
     <>
       <div className="flex overflow-hidden flex-col bg-white mb-20">

@@ -2,11 +2,9 @@ import React from 'react';
 import CompanyLogo2 from '../../assets/Company Logo 2.svg';
 import SocialMediaIcons from '../../assets/Social Media Icons.svg';
 
-interface FooterProps {}
-
-const Footer: React.FC<FooterProps> = () => {
+const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col items-start px-20 pt-24 w-full bg-blue-950 max-md:px-5 max-md:max-w-full">
+    <footer className="flex flex-col items-start px-20 pt-24 w-full bg-customBlue max-md:px-5 max-md:max-w-full">
       <div className="flex flex-col max-w-full w-[1059px]">
         <div className="flex flex-wrap gap-10 max-md:max-w-full">
           <div className="flex flex-col flex-1 self-start mt-2 text-base font-medium leading-7 text-white">
