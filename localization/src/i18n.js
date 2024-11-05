@@ -1,20 +1,11 @@
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
+import I18NextHttpBackend from "i18next-http-backend";
 
-i18n.use(LanguageDetector).use(initReactI18next).init({
+i18n.use(LanguageDetector).use(initReactI18next).use(I18NextHttpBackend).init({
     debug: true,
+    returnObjects: true,
     lng: "en",
-    resources: {
-        en: {
-            translation: {
-                greeting: "Hello, Welcome!",
-            },
-        },
-        am: {
-            translation: {
-                greeting: "ሰላም፣ እንኳን ደና መጡ!",
-            },
-        }
-    }
+    fallbackLng: "en"
 })
